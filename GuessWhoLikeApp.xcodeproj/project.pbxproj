@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35D26DF82B3CF220464FBFA2 /* Pods_GuessWhoLikeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1901A419DDA859A3AD5C6C79 /* Pods_GuessWhoLikeApp.framework */; };
 		DABE6C4D2A50DD0D00C6B929 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE6C4C2A50DD0D00C6B929 /* AppDelegate.swift */; };
 		DABE6C4F2A50DD0D00C6B929 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE6C4E2A50DD0D00C6B929 /* SceneDelegate.swift */; };
-		DABE6C512A50DD0D00C6B929 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE6C502A50DD0D00C6B929 /* ViewController.swift */; };
+		DABE6C512A50DD0D00C6B929 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE6C502A50DD0D00C6B929 /* LoginViewController.swift */; };
 		DABE6C542A50DD0D00C6B929 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABE6C522A50DD0D00C6B929 /* Main.storyboard */; };
 		DABE6C562A50DD0E00C6B929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABE6C552A50DD0E00C6B929 /* Assets.xcassets */; };
 		DABE6C592A50DD0E00C6B929 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABE6C572A50DD0E00C6B929 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1901A419DDA859A3AD5C6C79 /* Pods_GuessWhoLikeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessWhoLikeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DDEFEBB0E60F929C91B0EBF /* Pods-GuessWhoLikeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessWhoLikeApp.debug.xcconfig"; path = "Target Support Files/Pods-GuessWhoLikeApp/Pods-GuessWhoLikeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C40808EC32F1AA1A89F5C860 /* Pods-GuessWhoLikeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessWhoLikeApp.release.xcconfig"; path = "Target Support Files/Pods-GuessWhoLikeApp/Pods-GuessWhoLikeApp.release.xcconfig"; sourceTree = "<group>"; };
 		DABE6C492A50DD0D00C6B929 /* GuessWhoLikeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessWhoLikeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABE6C4C2A50DD0D00C6B929 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DABE6C4E2A50DD0D00C6B929 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DABE6C502A50DD0D00C6B929 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DABE6C502A50DD0D00C6B929 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DABE6C532A50DD0D00C6B929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DABE6C552A50DD0E00C6B929 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DABE6C582A50DD0E00C6B929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35D26DF82B3CF220464FBFA2 /* Pods_GuessWhoLikeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A9B62011B72CB70144E22AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DDEFEBB0E60F929C91B0EBF /* Pods-GuessWhoLikeApp.debug.xcconfig */,
+				C40808EC32F1AA1A89F5C860 /* Pods-GuessWhoLikeApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		640E3888524E987F3202F05B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1901A419DDA859A3AD5C6C79 /* Pods_GuessWhoLikeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DABE6C402A50DD0D00C6B929 = {
 			isa = PBXGroup;
 			children = (
 				DABE6C4B2A50DD0D00C6B929 /* GuessWhoLikeApp */,
 				DABE6C4A2A50DD0D00C6B929 /* Products */,
+				2A9B62011B72CB70144E22AE /* Pods */,
+				640E3888524E987F3202F05B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +82,7 @@
 			children = (
 				DABE6C4C2A50DD0D00C6B929 /* AppDelegate.swift */,
 				DABE6C4E2A50DD0D00C6B929 /* SceneDelegate.swift */,
-				DABE6C502A50DD0D00C6B929 /* ViewController.swift */,
+				DABE6C502A50DD0D00C6B929 /* LoginViewController.swift */,
 				DABE6C522A50DD0D00C6B929 /* Main.storyboard */,
 				DABE6C552A50DD0E00C6B929 /* Assets.xcassets */,
 				DABE6C572A50DD0E00C6B929 /* LaunchScreen.storyboard */,
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DABE6C5D2A50DD0E00C6B929 /* Build configuration list for PBXNativeTarget "GuessWhoLikeApp" */;
 			buildPhases = (
+				6F585D94CF3F14A20FA45DCF /* [CP] Check Pods Manifest.lock */,
 				DABE6C452A50DD0D00C6B929 /* Sources */,
 				DABE6C462A50DD0D00C6B929 /* Frameworks */,
 				DABE6C472A50DD0D00C6B929 /* Resources */,
+				06B25E7AADCE51102F1A8014 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +159,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06B25E7AADCE51102F1A8014 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuessWhoLikeApp/Pods-GuessWhoLikeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuessWhoLikeApp/Pods-GuessWhoLikeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GuessWhoLikeApp/Pods-GuessWhoLikeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F585D94CF3F14A20FA45DCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuessWhoLikeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DABE6C452A50DD0D00C6B929 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DABE6C512A50DD0D00C6B929 /* ViewController.swift in Sources */,
+				DABE6C512A50DD0D00C6B929 /* LoginViewController.swift in Sources */,
 				DABE6C4D2A50DD0D00C6B929 /* AppDelegate.swift in Sources */,
 				DABE6C4F2A50DD0D00C6B929 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +350,7 @@
 		};
 		DABE6C5E2A50DD0E00C6B929 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DDEFEBB0E60F929C91B0EBF /* Pods-GuessWhoLikeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +379,7 @@
 		};
 		DABE6C5F2A50DD0E00C6B929 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C40808EC32F1AA1A89F5C860 /* Pods-GuessWhoLikeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
