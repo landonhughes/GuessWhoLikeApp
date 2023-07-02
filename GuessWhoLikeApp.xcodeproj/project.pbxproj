@@ -20,6 +20,8 @@
 		1901A419DDA859A3AD5C6C79 /* Pods_GuessWhoLikeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessWhoLikeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDEFEBB0E60F929C91B0EBF /* Pods-GuessWhoLikeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessWhoLikeApp.debug.xcconfig"; path = "Target Support Files/Pods-GuessWhoLikeApp/Pods-GuessWhoLikeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C40808EC32F1AA1A89F5C860 /* Pods-GuessWhoLikeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessWhoLikeApp.release.xcconfig"; path = "Target Support Files/Pods-GuessWhoLikeApp/Pods-GuessWhoLikeApp.release.xcconfig"; sourceTree = "<group>"; };
+		DA4764142A50F041003EB871 /* SCSDKCoreKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SCSDKCoreKit.xcframework; path = Pods/SnapSDK/SCSDKCoreKit.xcframework; sourceTree = "<group>"; };
+		DA4764152A50F041003EB871 /* SCSDKLoginKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SCSDKLoginKit.xcframework; path = Pods/SnapSDK/SCSDKLoginKit.xcframework; sourceTree = "<group>"; };
 		DABE6C492A50DD0D00C6B929 /* GuessWhoLikeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessWhoLikeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABE6C4C2A50DD0D00C6B929 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DABE6C4E2A50DD0D00C6B929 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		640E3888524E987F3202F05B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA4764142A50F041003EB871 /* SCSDKCoreKit.xcframework */,
+				DA4764152A50F041003EB871 /* SCSDKLoginKit.xcframework */,
 				1901A419DDA859A3AD5C6C79 /* Pods_GuessWhoLikeApp.framework */,
 			);
 			name = Frameworks;
