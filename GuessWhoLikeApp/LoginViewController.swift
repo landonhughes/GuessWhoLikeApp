@@ -37,6 +37,8 @@ class LoginViewController: UIViewController {
         // Call fetch API
         SCSDKLoginClient.fetchUserData(with: query) { [weak self] userData, error in
             guard let data = userData else { return }
+            print("Error after data:",error?.localizedDescription)
+            print(data)
             self?.displayName = data.displayName ?? "Someone"
             print("Display name:", data.displayName ?? "Someone")
             print("Avatar url:", data.bitmojiTwoDAvatarUrl ?? "Default url")
