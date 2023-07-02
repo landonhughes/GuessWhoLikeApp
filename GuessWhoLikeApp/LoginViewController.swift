@@ -8,6 +8,8 @@
 import UIKit
 import SCSDKLoginKit
 
+// Snapchat loginkit example (still confused) Working example, spending too much time trying to figure out their api
+
 class LoginViewController: UIViewController {
     var displayName: String!
     // Requesting the bitmoji is the only problem!!!
@@ -18,8 +20,6 @@ class LoginViewController: UIViewController {
             guard success == true else { return }
             print(error.localizedDescription)
         }
-        
- 
         
         
         loginButton.sizeToFit()
@@ -37,14 +37,17 @@ class LoginViewController: UIViewController {
         // Call fetch API
         SCSDKLoginClient.fetchUserData(with: query) { [weak self] userData, error in
             guard let data = userData else { return }
-            print("Error after data:",error?.localizedDescription)
+            print("Line: \(#line)Error after data:",error?.localizedDescription ?? "no error")
             print(data)
+            print("Partial error \(error)")
             self?.displayName = data.displayName ?? "Someone"
             print("Display name:", data.displayName ?? "Someone")
             print("Avatar url:", data.bitmojiTwoDAvatarUrl ?? "Default url")
-        } failure: { error, _ in
+        } failure: { error, isUserLoggedOut in
+//            guard let isUserLoggedOut = isUserLoggedOut else { return }
+            print("Logged out?: \(isUserLoggedOut)")
             guard let error = error else { return }
-            print("Error: \(error.localizedDescription)")
+            print("Line \(#line) - Error: \(error.localizedDescription)")
         }
     }
     
